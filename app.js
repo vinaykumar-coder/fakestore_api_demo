@@ -30,7 +30,7 @@ function displayProducts(products){
         productDescription.textContent = `${product.description.slice(0, 100)}...`;
 
         const productPrice = document.createElement('span')
-        productPrice.textContent = `Price: $₹{product.price}`;
+        productPrice.textContent = `Price: ₹${product.price}`;
 
 
         // append all elements to product card
