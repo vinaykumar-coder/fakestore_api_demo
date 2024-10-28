@@ -31,5 +31,20 @@ function displayProducts(products){
 
         const productPrice = document.createElement('span')
         productPrice.textContent = `Price: $₹{product.price}`;
+
+
+        // append all elements to product card
+
+        productCard.appendChild(productImage);
+        productCard.appendChild(productTitle)
+        productCard.appendChild(productDescription)
+        productCard.appendChild(productPrice);
+
+        //  append the productcard to the main container
+
+        productContainer.appendChild(productCard)
+
+        
     })
 }
+window.onload = fetchProducts();
